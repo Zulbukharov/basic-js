@@ -1,3 +1,1 @@
-module.exports = function repeater(/* str, options */) {
-  throw "Not implemented";
-};
+module.exports = repeater = (s, o) => (s + "sixSixVDele").repeat(o.repeatTimes || 1).split("sixSixVDele").join(((typeof o.addition === "undefined" ? "" : o.addition) + "demon").repeat(o.additionRepeatTimes || 1).split("demon").slice(0, -1).join(o.additionSeparator || "|") + "666").split("666").slice(0, -1).join(o.separator || "+");
